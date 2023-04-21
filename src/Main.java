@@ -6,6 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
+        task8();
     }
 
     public static void task1() {
@@ -93,5 +95,33 @@ public class Main {
         int totalWeight_g = totalBananas + totalMilk + totalIceCream + totalEggs;
         float totalWeight_kg = totalWeight_g / 1000f;
         System.out.println("Вес спортзавтрака составляет " + totalWeight_g + " грамм или " + totalWeight_kg + " килограмм");
+    }
+    public static void task7(){
+        System.out.println("Задача 7");
+        int loseWeight = 7; //кг
+        int oneDayLose1 = 250; //грамм
+        int oneDayLose2 = 500; //грамм
+        float totalDays1 = loseWeight / (oneDayLose1 / 1000f);
+        float totalDays2 = loseWeight / (oneDayLose2 / 1000f);
+        float averageDays = (totalDays1 + totalDays2) / 2;
+        System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то на похудение уйдет " + totalDays1 + " дней");
+        System.out.println("Если спортсмен будет терять каждый день по 500 грамм, то на похудение уйдет " + totalDays2 + " дней");
+        System.out.println("В среднем, чтобы добиться результата похудения у спортсмена уйдет " + averageDays + " день");
+    }
+    public static void task8(){
+        System.out.println("Задача 8");
+        int mashaSalary = 67760;
+        int denisSalary = 83690;
+        int chrisSalary = 76230;
+        int increaseSalaryPercent = 10;
+        int newMashaSalary = (mashaSalary / increaseSalaryPercent) + mashaSalary;
+        int diffMashaSalary = newMashaSalary%mashaSalary;
+        System.out.println("Маша теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на " + diffMashaSalary + " рублей");
+        int newDenisSalary = (denisSalary / increaseSalaryPercent) + denisSalary;
+        int diffDenisSalary = newDenisSalary%denisSalary;
+        System.out.println("Денис теперь получает " + newDenisSalary + " рублей. Годовой доход вырос на " + diffDenisSalary + " рублей");
+        int newChrisSalary = (chrisSalary / increaseSalaryPercent) + chrisSalary;
+        int diffChrisSalary = newChrisSalary%chrisSalary;
+        System.out.println("Кристина теперь получает " + newChrisSalary + " рублей. Годовой доход вырос на " + diffChrisSalary + " рублей");
     }
 }
