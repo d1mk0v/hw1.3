@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -66,6 +67,7 @@ public class Main {
         System.out.println("За месяц машина произвела " + performance4 + " бутылок");
     }
     public static void task5(){
+        System.out.println("Задача 5");
         int neededToRemoteSchool = 120;
         int whiteColorInOneClass = 2;
         int brownColorInOneClass = 4;
@@ -73,6 +75,23 @@ public class Main {
         int totalWhiteColor = totalClasses * 2;
         int totalBrownColor = totalClasses * 4;
         System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhiteColor + " банок белой краски и " + totalBrownColor + " банок коричневой краски");
-
+    }
+    public static void task6(){
+        System.out.println("Задача 6");
+        int bananas = 5;
+        int oneBananaWeight = 80;
+        int totalBananas = bananas * oneBananaWeight;
+        int milk = 200;
+        int milk100Weight = 105;
+        int totalMilk = (milk / 100) * milk100Weight;
+        int iceCream = 2;
+        int oneIceCreamWeight = 100;
+        int totalIceCream = iceCream * oneIceCreamWeight;
+        int eggs = 4;
+        int oneEggWeight = 70;
+        int totalEggs = eggs * oneEggWeight;
+        int totalWeight_g = totalBananas + totalMilk + totalIceCream + totalEggs;
+        float totalWeight_kg = totalWeight_g / 1000f;
+        System.out.println("Вес спортзавтрака составляет " + totalWeight_g + " грамм или " + totalWeight_kg + " килограмм");
     }
 }
