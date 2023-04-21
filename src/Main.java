@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -44,7 +45,23 @@ public class Main {
         byte class3 = 30;
         int totalPupils = class1 + class2 + class3;
         short totalPapers = 480;
-        short eachStudentPaper = (short) (totalPapers / totalPupils);
+        int eachStudentPaper = totalPapers / totalPupils;
         System.out.println("На каждого ученика рассчитано " + eachStudentPaper + " листов бумаги");
+    }
+    public static void task4(){
+        System.out.println("Задача 4");
+        int minuteMachinePerformance = 16 / 2;
+        int time1 = 20;
+        int performance1 = minuteMachinePerformance * time1;
+        System.out.println("За " + time1 + " минут машина произвела " + performance1 + " бутылок");
+        int time2 = 1 * 24 * 60;
+        int performance2 = minuteMachinePerformance * time2;
+        System.out.println("За сутки машина произвела " + performance2 + " бутылок");
+        int time3 = 3 * 24 * 60;
+        int performance3 = minuteMachinePerformance * time3;
+        System.out.println("За 3 дня машина произвела " + performance3 + " бутылок");
+        int time4 = 30 * 24 * 60;
+        int performance4 = minuteMachinePerformance * time4;
+        System.out.println("За месяц машина произвела " + performance4 + " бутылок");
     }
 }
