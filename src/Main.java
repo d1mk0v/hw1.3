@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -63,5 +64,15 @@ public class Main {
         int time4 = 30 * 24 * 60;
         int performance4 = minuteMachinePerformance * time4;
         System.out.println("За месяц машина произвела " + performance4 + " бутылок");
+    }
+    public static void task5(){
+        int neededToRemoteSchool = 120;
+        int whiteColorInOneClass = 2;
+        int brownColorInOneClass = 4;
+        int totalClasses = neededToRemoteSchool / (whiteColorInOneClass + brownColorInOneClass);
+        int totalWhiteColor = totalClasses * 2;
+        int totalBrownColor = totalClasses * 4;
+        System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhiteColor + " банок белой краски и " + totalBrownColor + " банок коричневой краски");
+
     }
 }
